@@ -8,8 +8,8 @@ var config=require("./package");
 var win = null;
 var createWindow = function () {
     win = new browserWindow({
-        width: 400,
-        height: 300,
+        width: 800,
+        height: 500,
         title:config.name,
         autoHideMenuBar:true,
         webPreferences:{

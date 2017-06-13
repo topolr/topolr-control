@@ -86,8 +86,12 @@ Module({
             ths.triggerService("list.refresh");
         })
     },
-    bind_run:function () {
-        
+    bind_run:function (dom) {
+        console.log(dom.parent().cache());
+        var data=dom.parent().cache();
+        require("@pipe").command("startbuilter",{path:data.path},function (a) {
+            console.log(a);
+        });
     }
 });
 Module({
