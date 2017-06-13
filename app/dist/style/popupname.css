@@ -1,0 +1,45 @@
+.popup {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+  .popup .mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical; }
+  .popup .box {
+    width: 300px;
+    background: white;
+    box-shadow: 0 0 20px #676767; }
+    .popup .box .head {
+      line-height: 35px;
+      padding: 0 10px 0 10px;
+      border-bottom: 1px solid #D7D7D7; }
+    .popup .box .content {
+      padding: 10px; }
+      .popup .box .content input {
+        height: 30px;
+        width: 100%;
+        border-radius: 3px;
+        border: 1px solid #D7D7D7;
+        padding: 0 10px 0 10px;
+        outline: none;
+        box-sizing: border-box; }
+        .popup .box .content input:focus {
+          border: 1px solid #4C4CFF; }
+        .popup .box .content input.error {
+          border: 1px solid red; }
+    .popup .box .btns {
+      line-height: 35px;
+      text-align: right; }
+      .popup .box .btns .btn {
+        padding: 0 20px 0 20px;
+        display: inline-block; }

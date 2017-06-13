@@ -1,0 +1,55 @@
+.popup{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    .mask{
+        position:absolute;
+        left:0;
+        top:0;
+        right:0;
+        bottom:0;
+        background:rgba(0,0,0,.1);
+        display: -webkit-box;
+        -webkit-box-pack:center;
+        -webkit-box-align:center;
+        -webkit-box-orient: vertical;
+    }
+    .box{
+        width:300px;
+        background:white;
+        box-shadow: 0 0 20px #676767;
+        .head{
+            line-height:35px;
+            padding:0 10px 0 10px;
+            border-bottom: 1px solid #D7D7D7;
+        }
+        .content{
+            padding:10px;
+            input{
+                height:30px;
+                width:100%;
+                border-radius: 3px;
+                border:1px solid #D7D7D7;
+                padding:0 10px 0 10px;
+                outline:none;
+                box-sizing: border-box;
+                &:focus{
+                    border:1px solid #4C4CFF;
+                }
+                &.error{
+                    border:1px solid red;
+                }
+            }
+        }
+        .btns{
+            line-height:35px;
+            text-align: right;
+            .btn{
+                padding:0 20px 0 20px;
+                display:inline-block;
+            }
+        }
+    }
+}

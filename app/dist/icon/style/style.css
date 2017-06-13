@@ -1,0 +1,67 @@
+.mt-icon-previewer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 500px;
+  z-index: 999999999;
+  background: #D7D7D7;
+  -webkit-transform: translateX(500px);
+          transform: translateX(500px);
+  transition: all ease-out .3s;
+  border-right: 0;
+  box-shadow: 0 0 10px #797979; }
+  .mt-icon-previewer .mt-icon-previewer-head {
+    line-height: 35px;
+    background: white;
+    padding: 0 10px 0 10px; }
+  .mt-icon-previewer .mt-icon-previewer-body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 35px; }
+    .mt-icon-previewer .mt-icon-previewer-body .mt-icon-previewer-sort {
+      margin: 10px;
+      background: white;
+      padding: 0 10px 0 10px; }
+    .mt-icon-previewer .mt-icon-previewer-body .mt-icon-previewer-sortname {
+      line-height: 30px;
+      padding: 0 10px 0 10px;
+      border-bottom: 1px solid #D7D7D7; }
+    .mt-icon-previewer .mt-icon-previewer-body .mt-icon-previewer-item {
+      line-height: 35px;
+      display: inline-block;
+      width: 220px; }
+    .mt-icon-previewer .mt-icon-previewer-body .mt-icon-previewer-item-icon {
+      width: 35px;
+      text-align: center;
+      font-size: 15px;
+      display: inline-block; }
+    .mt-icon-previewer .mt-icon-previewer-body .mt-icon-previewer-item-id {
+      display: inline-block;
+      font-size: 12px; }
+    .mt-icon-previewer .mt-icon-previewer-body .mt-icon-previewer-body-con {
+      overflow: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0; }
+  .mt-icon-previewer .mt-icon-previewer-arrow {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: 15px;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+    background: white;
+    border: 1px solid #D7D7D7; }
+  .mt-icon-previewer.mt-icon-previewer-open {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+    .mt-icon-previewer.mt-icon-previewer-open .mt-icon-previewer-arrow {
+      -webkit-transform: translateX(30px);
+              transform: translateX(30px);
+      border-left: 0; }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="node_modules/topolr/topolr.js" type="text/javascript"></script>
+        <script>
+            var path=process.cwd().replace(/\\/g,"/");
+            App.ipc= require("electron").ipcRenderer;
+            App({
+    "basePath": "app/dist/",
+    "debug": true,
+    "title": "topolr-control",
+    "description": "topolr-control",
+    "keywords": "topolr-control",
+    "boot": "option.root.boot",
+    "map": {
+        "d": true,
+        "m": {
+            "p": {
+                "icon.action": "a0514105bb",
+                "icon.direct": "1789127aa8",
+                "icon.editor": "e40b7acc0a",
+                "icon.files": "6f70429ee0",
+                "icon.iconpreviewer": "b9176304ec",
+                "icon.loading": "bfb407fe1c",
+                "icon.player": "2f9f8b707c",
+                "icon.test": "2f84e120c7",
+                "icon.tm": "b1eb970f4a",
+                "icon.weather": "77df27ce51",
+                "app": "ae8a080317",
+                "option.root": "8eceaaca03",
+                "pipe": "ad3a684318",
+                "service.project": "fa743be4e1"
+            },
+            "c": {
+                "icon.style.icon": "c34b1536de",
+                "icon.style.style": "1a26c51a6b",
+                "style.loading": "ab3bd2bc59"
+            },
+            "t": {
+                "icon.template.temp": "8397de88de",
+                "template.temp": "e942601f5b"
+            },
+            "y": {
+                "style.main": "e4bbd88c18",
+                "style.popupname": "d281fe1f4f",
+                "style.server": "3ef61aca91"
+            }
+        },
+        "c": {
+            "option-root-c3": {
+                "p": [
+                    "option.root",
+                    "app",
+                    "service.project",
+                    "pipe",
+                    "icon.action",
+                    "icon.player"
+                ],
+                "c": [
+                    "icon.style.icon",
+                    "style.loading"
+                ],
+                "t": [
+                    "template.temp"
+                ],
+                "y": [
+                    "style.main",
+                    "style.server",
+                    "style.popupname"
+                ]
+            }
+        },
+        "id": "0ba2244cc5aa3fdf5b0811d8da4ee7ac"
+    }
+}).setSitePath(path).boot();
+        </script>
+    </head>
+    <body></body>
+</html>

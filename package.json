@@ -1,0 +1,40 @@
+{
+  "name": "topolr-control",
+  "version": "0.0.1",
+  "description": "topolr control",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "dev": "electron index.js",
+    "app": "topolr-builter build --dev&&electron index.js",
+    "build:mac": "topolr-builter build --pub&&node builder/mac-builder.js",
+    "build:windows": "topolr-builter build --pub&&node builder/windows-builder.js",
+    "build:linux": "topolr-builter build --pub&&node builder/linux-builder.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hou80houzhu/topolr-control.git"
+  },
+  "keywords": [
+    "topolr",
+    "control"
+  ],
+  "author": "Jinliang (hou80houzhu)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hou80houzhu/topolr-control/issues"
+  },
+  "homepage": "https://github.com/hou80houzhu/topolr-control#readme",
+  "dependencies": {
+    "topolr": "^1.3.12",
+    "topolr-builter": "^1.1.1",
+    "topolr-module-icon": "^1.0.8",
+    "topolr-server": "^1.2.6",
+    "topolr-util": "^1.0.0"
+  },
+  "devDependencies": {
+    "electron": "^0.4.1",
+    "electron-prebuilt": "^1.2.1",
+    "electron-packager": "^8.3.0"
+  }
+}

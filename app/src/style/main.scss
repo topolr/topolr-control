@@ -1,0 +1,34 @@
+body{
+    padding:0;
+    margin:0;
+    font: 12px/1.231 "Helvetica Neue",Helvetica Neue,Helvetica,Arial,Lantinghei SC,Hiragino Sans GB,Microsoft Yahei,sans-serif;
+}
+.item{
+    line-height:40px;
+    border-bottom:1px solid #EDEDED;
+    background:white;
+    box-shadow: 0 5px 10px #DEDEDE;
+    transition:all ease-out .3s;
+    .title{
+        display:flex;
+        .name{
+            flex:1;
+            padding:0 10px 0 10px;
+        }
+        .tools{
+            .btn{
+                width:30px;
+                text-align: center;
+                display: inline-block;
+                font-size:16px;
+                &:hover{
+                    background:#EAEAEA;
+                    transition:all ease-out .3s;
+                }
+            }
+        }
+    }
+    &:hover{
+        background:#FCFCFC;
+    }
+}
